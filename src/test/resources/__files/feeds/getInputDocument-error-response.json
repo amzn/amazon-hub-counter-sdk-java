@@ -1,0 +1,4 @@
+{
+  "message": "Auth with LWA failed: INVALID_TOKEN: invalid checksum",
+  "retryable": false
+}

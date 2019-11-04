@@ -1,0 +1,6 @@
+{
+  "access_token": "Atc|MQEBIOIv_mqVgRWTTMC_DzCa42aptNkl3Vhkh0I0aRR0Xo_JpZMKT7d0BVdHE02uiktSxKZaQ6DS-iyIhHciDCzH6ERhclDnECBQoOrOf1skG4Hmsanhy3WQNAzqebGdrWHIm-1UkcHo9pwOPag9BFWl1bHmqVAj725TFi4yd369TEx5Ss-cSJtpzLsqe4NqEUnuCjrIhr4Ji_Ec7oY9i_F9it01jbUbWxf_bp1iCtPvkEy0dnzVBv28kRuwZIsgqm-a44V5gIbn0CAWLA9HidD71g0pLHyzQjLLZomQQA9QWs5AWQ",
+  "scope": "accesspoints::accesspoint:readwrite",
+  "token_type": "bearer",
+  "expires_in": 3600
+}

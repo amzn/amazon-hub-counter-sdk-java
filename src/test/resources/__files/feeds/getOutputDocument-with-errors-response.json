@@ -1,0 +1,19 @@
+{
+  "feedId": "9ee9766c-6c3e-4f83-ae9f-cbaozo615w5w",
+  "noOfAccessPointsProcessed": 1,
+  "noOfAccessPointsSuccessfullyProcessed": 0,
+  "noOfAccessPointsFailedToProcess": 1,
+  "failedAccessPointProcessingDetails": [
+    {
+      "indexNumber": 1,
+      "accessPointId": "TEST-STORE-ID",
+      "errors": [
+        {
+          "errorCode": "STORE_CREATION_FAILURE",
+          "errorMessage": "[STORE_CREATION_FAILURE] Error occurred while creation of store"
+        }
+      ],
+      "resultStatus": "FAILURE"
+    }
+  ]
+}
