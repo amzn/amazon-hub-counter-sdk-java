@@ -457,7 +457,6 @@ public class AmazonHubCounterFeedAPITest {
         assertEquals("UAT-NA-PROD-AMAZON-US", req.getAccessPoints()[0].getAccessPointId());
         assertEquals("Amazon Hub Counter - Amazon US HQ", req.getAccessPoints()[0].getAccessPointName());
         assertEquals(true, req.getAccessPoints()[0].getIsActive());
-        assertEquals(false, req.getAccessPoints()[0].getIsRestrictedAccess());
         assertEquals("America/Los_Angeles", req.getAccessPoints()[0].getTimeZone());
         // address
         assertEquals("1918 8th Ave, Seattle, WA 98101, USA", req.getAccessPoints()[0].getAddress().getAddressFieldOne());
@@ -496,8 +495,8 @@ public class AmazonHubCounterFeedAPITest {
         assertEquals("12:00:00", req.getAccessPoints()[0].getStandardHoursList()[5].getMidDayClosures()[0].getStartTime());
         assertEquals("13:00:00", req.getAccessPoints()[0].getStandardHoursList()[5].getMidDayClosures()[0].getEndTime());
 
-        assertEquals("2038-01-19T00:00:00", req.getAccessPoints()[0].getExceptionalClosures()[0].getStartDateTime());
-        assertEquals("2038-01-20T00:00:00", req.getAccessPoints()[0].getExceptionalClosures()[0].getEndDateTime());
+        assertEquals("2038-01-19", req.getAccessPoints()[0].getExceptionalClosures()[0].getStartDateTime());
+        assertEquals("2038-01-20", req.getAccessPoints()[0].getExceptionalClosures()[0].getEndDateTime());
         assertEquals("store-id@example.com", req.getAccessPoints()[0].getCommunicationDetails().getEmailId());
         assertEquals("00 1 206-922-0880", req.getAccessPoints()[0].getCommunicationDetails().getPhoneNumber());
         assertNull(req.getAccessPoints()[0].getCommunicationDetails().getFaxPhone());
@@ -526,8 +525,8 @@ public class AmazonHubCounterFeedAPITest {
         // Create an Exceptional Closure
         ExceptionalClosure[] exceptionalClosures = new ExceptionalClosure[1];
         exceptionalClosures[0] = ExceptionalClosure.builder()
-                .startDateTime("2038-01-19T00:00:00")
-                .endDateTime("2038-01-20T00:00:00")
+                .startDateTime("2038-01-19")
+                .endDateTime("2038-01-20")
                 .build();
 
         // Create the Communication Details
@@ -632,8 +631,8 @@ public class AmazonHubCounterFeedAPITest {
         // Create an Exceptional Closure
         ExceptionalClosure[] exceptionalClosures = new ExceptionalClosure[1];
         exceptionalClosures[0] = ExceptionalClosure.builder()
-                .startDateTime("2038-01-19T00:00:00")
-                .endDateTime("2038-01-20T00:00:00")
+                .startDateTime("2038-01-19")
+                .endDateTime("2038-01-20")
                 .build();
 
         // Create the Communication Details

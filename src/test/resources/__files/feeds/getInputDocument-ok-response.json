@@ -59,8 +59,8 @@
       ],
       "exceptionalClosures": [
         {
-          "startDateTime": "2038-01-19T00:00:00",
-          "endDateTime": "2038-01-20T00:00:00"
+          "startDateTime": "2038-01-19",
+          "endDateTime": "2038-01-20"
         }
       ],
       "communicationDetails": {
