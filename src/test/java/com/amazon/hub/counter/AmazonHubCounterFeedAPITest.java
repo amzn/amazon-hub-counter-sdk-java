@@ -26,6 +26,8 @@ import com.github.tomakehurst.wiremock.client.WireMock;
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
 
 import static org.junit.jupiter.api.Assertions.*;
+import org.skyscreamer.jsonassert.JSONAssert;
+import org.json.JSONException;
 
 import com.github.tomakehurst.wiremock.http.Fault;
 import org.junit.jupiter.api.*;
@@ -605,7 +607,11 @@ public class AmazonHubCounterFeedAPITest {
                 Paths.get("src/test/resources/__files/feeds/feedRequest.json")
         ));
 
-        assertEquals(accessPointsFeedRequest.toJson(), feedRequestJson);
+        try {
+                JSONAssert.assertEquals(accessPointsFeedRequest.toJson(), feedRequestJson, false);
+        } catch (JSONException e) {
+                throw new IllegalArgumentException(e.getMessage());
+        }
     }
 
     @Test

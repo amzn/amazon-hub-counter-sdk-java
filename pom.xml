@@ -94,6 +94,12 @@
             <version>5.5.1</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://jsonassert.skyscreamer.org/cookbook.html -->
+        <dependency>
+            <groupId>org.skyscreamer</groupId>
+            <artifactId>jsonassert</artifactId>
+            <version>1.5.0</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
